@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baldini Produções IA</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#100b06;color:#fff;font-family:Arial,sans-serif}
+header{padding:22px 6%;border-bottom:1px solid #61451c;display:flex;align-items:center;justify-content:space-between}
+.brand{color:#f3bd52;font-size:21px;font-weight:bold}
+.brand small{display:block;font-size:10px;letter-spacing:4px;margin-top:5px}
+nav a{color:#e9d7b4;text-decoration:none;margin-left:18px;font-size:14px}
+.hero{text-align:center;padding:65px 20px 35px}
+.hero h1{font-size:38px;color:#f3bd52;margin-bottom:12px}
+.hero p{color:#c7b99f;line-height:1.6}
+.tag{color:#f3bd52;letter-spacing:3px;font-size:12px}
+.container{max-width:1000px;margin:auto;padding:20px}
+.tools{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.tool{background:#21170d;border:1px solid #67491e;border-radius:14px;padding:24px}
+.tool .emoji{font-size:30px}
+.tool h3{color:#f3bd52}
+.tool p{color:#c5b69e;font-size:14px;line-height:1.5}
+button{background:linear-gradient(90deg,#b77a18,#f5cc69);border:0;border-radius:8px;padding:13px 20px;font-weight:bold;color:#211507;cursor:pointer}
+.generator{margin-top:30px;padding:25px;background:#1b140c;border:1px solid #67491e;border-radius:14px}
+.generator h2{color:#f3bd52}
+textarea{width:100%;height:110px;background:#100b06;border:1px solid #725329;border-radius:8px;color:white;padding:14px;font-size:15px}
+select{background:#100b06;color:white;border:1px solid #725329;padding:12px;border-radius:8px;margin:12px 8px 12px 0}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+.plan{background:#21170d;border:1px solid #67491e;border-radius:12px;padding:20px;text-align:center}
+.price{font-size:26px;color:#f3bd52;font-weight:bold}
+footer{text-align:center;padding:35px;color:#bca782;font-size:12px}
+@media(max-width:650px){
+ nav{display:none}
+ .hero h1{font-size:29px}
+ .tools{grid-template-columns:1fr}
+ .plans{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="brand">BALDINI PRODUÇÕES
+<small>INOVAÇÕES BRILHANTES</small></div>
+<nav>
+<a href="#inicio">Início</a>
+<a href="#ferramentas">Ferramentas</a>
+<a href="#planos">Planos</a>
+</nav>
+</header>
+
+<section class="hero" id="inicio">
+<div class="tag">INTELIGÊNCIA ARTIFICIAL</div>
+<h1>Sua criatividade sem limites</h1>
+<p>Crie imagens, vídeos e anúncios profissionais<br>
+com o poder da inteligência artificial.</p>
+</section>
+
+<main class="container">
+<h2 style="color:#f3bd52" id="ferramentas">Nossas ferramentas</h2>
+<div class="tools">
+<div class="tool">
+<div class="emoji">🎨</div>
+<h3>Gerador de imagens</h3>
+<p>Transforme suas ideias em imagens incríveis com inteligência artificial.</p>
+<button onclick="document.getElementById('prompt').focus()">Criar imagem</button>
+</div>
+<div class="tool">
+<div class="emoji">🎬</div>
+<h3>Gerador de vídeos</h3>
+<p>Prepare vídeos criativos para suas redes sociais.</p>
+<button onclick="alert('Gerador de vídeos em desenvolvimento.')">Criar vídeo</button>
+</div>
+<div class="tool">
+<div class="emoji">📢</div>
+<h3>Anúncios profissionais</h3>
+<p>Prepare campanhas e materiais para divulgar seu negócio.</p>
+<button onclick="alert('Gerador de anúncios em desenvolvimento.')">Criar anúncio</button>
+</div>
+<div class="tool">
+<div class="emoji">🖼️</div>
+<h3>Minhas criações</h3>
+<p>Área reservada para suas imagens e trabalhos.</p>
+<button onclick="alert('Galeria em desenvolvimento.')">Ver criações</button>
+</div>
+</div>
+
+<section class="generator">
+<h2>Experimente nosso criador</h2>
+<p style="color:#c5b69e">Descreva a imagem que você deseja criar:</p>
+<textarea id="prompt" placeholder="Exemplo: uma propaganda elegante para uma pizzaria..."></textarea>
+<br>
+<select id="formato">
+<option>Quadrado</option>
+<option>Vertical</option>
+<option>Horizontal</option>
+</select>
+<button onclick="alert('A geração por IA será ativada na próxima etapa, após a integração da API.')">Gerar imagem</button>
+</section>
+
+<h2 id="planos" style="color:#f3bd52;margin-top:40px">Nossos planos</h2>
+<div class="plans">
+<div class="plan">
+<h3>Básico</h3>
+<div class="price">R$ 49,90</div>
+<p>Por mês</p>
+</div>
+<div class="plan">
+<h3>Profissional</h3>
+<div class="price">R$ 99,90</div>
+<p>Por mês</p>
+</div>
+<div class="plan">
+<h3>Premium</h3>
+<div class="price">R$ 199,90</div>
+<p>Por mês</p>
+</div>
+</div>
+</main>
+
+<footer>
+BALDINI PRODUÇÕES © 2026<br>
+INOVAÇÕES BRILHANTES
+</footer>
+</body>
+</html>
